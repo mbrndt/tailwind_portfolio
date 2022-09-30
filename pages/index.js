@@ -11,9 +11,7 @@ import consulting from "../public/consulting.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import web4 from "../public/web4.jpg";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,8 +27,10 @@ export default function Home() {
         {/* <main className="dark:bg-gray-900 bg-gradient-to-t from-red-200 to-orange-200 px-10 md:px-20 lg:px-40 "> */}
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">developed by mareike</h1>
-            <ul className="flex items-center">
+            <h1 className="text-xl text-orange-800 font-burtons">
+              mareike brandt
+            </h1>
+            <ul className="flex items-center text-blue-900 dark:text-neutral-400">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
@@ -40,7 +40,7 @@ export default function Home() {
               <li>
                 {" "}
                 <a
-                  className="bg-red-300 dark:bg-sky-700 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-orange-300 dark:bg-orange-800 text-slate-700 dark:text-white px-4 py-2 rounded-md ml-8"
                   href="#"
                 >
                   resume
@@ -49,13 +49,13 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10  ">
-            <h2 className="text-5xl py-2 text-zinc-800 font-medium md:text-6xl dark:text-slate-200">
+            <h2 className="text-5xl py-2 text-zinc-800 font-medium md:text-6xl dark:text-orange-800">
               Mareike Brandt
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-sky-700">
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-amber-600">
               dev and designer
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-sky-700 md:text-xl max-w-xl mx-auto">
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-amber-700 md:text-xl max-w-xl mx-auto">
               junior developer based in south korea, able to work world wide.
               excited to see whats out there
             </p>
@@ -76,78 +76,88 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              I love to learn and beginn my journey to great dev for{" "}
-              <span className="text-teal-500">agencies</span> and consulted for{" "}
-              <span className="text-teal-500">startups</span> and collaborated
-              with talented people to create digital products for the web.
+            <h3 className="text-3xl py-1 dark:text-amber-700">My Techstack</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-neutral-400">
+              I love to learn and beginn my journey into the world of dev. I can
+              not wait to work for and with {""}
+              <span className="text-amber-800">talented people</span>, to create{" "}
+              {""}
+              <span className="text-amber-500">beautiful</span> digital products
+              for the web.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-neutral-400">
               I am a full stack developer with a passion for design and a focus
               on the user experience.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-neutral-100">
               <Image src={design} alt="" width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
+              <h3 className="text-lg  font-medium pt-8 pb-2 dark:text-neutral-800">
                 Beautiful Design
               </h3>
-              <p className="py-2">
+              <p className="py-2 text-left">
                 Creating elegant designs that are easy to use and look great on
                 any device.
               </p>
-              <h4 className="py-4 text-teal-600">design tools I use</h4>
-              <p className="text-gray-800 py-1">adobe xd</p>
-              <p className="text-gray-800 py-1">adobe photoshop</p>
-              <p className="text-gray-800 py-1">adobe illustrator</p>
-              <p className="text-gray-800 py-1">figma</p>
+              <h4 className="py-4 text-amber-800">
+                What I Use For Delightful Products:
+              </h4>
+              <p className="text-gray-800 py-1">Adobe xd, Figma</p>
+              <p className="text-gray-800 py-1">React.js</p>
+              <p className="text-gray-800 py-1">Tailwind</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-neutral-100">
               <Image src={code} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Design
+                From the Front to the Back
               </h3>
-              <p className="py-2">
-                Creating elegant designs that are easy to use and look great on
-                any device.
+              <p className="py-2 text-left">
+                I can build your website from scratch or help you with your next
+                big project.
               </p>
-              <h4 className="py-4 text-teal-600">design tools I use</h4>
-              <p className="text-gray-800 py-1">adobe xd</p>
-              <p className="text-gray-800 py-1">adobe photoshop</p>
-              <p className="text-gray-800 py-1">adobe illustrator</p>
-              <p className="text-gray-800 py-1">figma</p>
+              <h4 className="py-4 text-amber-800">
+                Technologies I am familiar with:
+              </h4>
+              <p className="text-gray-800 py-1">Node.js, Express.js</p>
+              <p className="text-gray-800 py-1">Heroku, Vercel</p>
+              <p className="text-gray-800 py-1">Git</p>
+              <p className="text-gray-800 py-1">MERN</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-neutral-100">
               <Image src={consulting} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Design
+                Educate yourself
               </h3>
-              <p className="py-2">
-                Creating elegant designs that are easy to use and look great on
-                any device.
+              <p className="py-2 text-left">
+                I believe that learning is a never ending process. I am always
+                looking on how to improve my skills.
               </p>
-              <h4 className="py-4 text-teal-600">design tools I use</h4>
-              <p className="text-gray-800 py-1">adobe xd</p>
-              <p className="text-gray-800 py-1">adobe photoshop</p>
-              <p className="text-gray-800 py-1">adobe illustrator</p>
-              <p className="text-gray-800 py-1">figma</p>
+              <h4 className="py-4 text-amber-700">Certificates I have:</h4>
+              <p className="text-gray-800 py-1">Google UX-Design Certificate</p>
+              <p className="text-gray-800 py-1">
+                AWS Certified Cloud Practitioner (currently in progress)
+              </p>
+              <br />
+              <h4 className="py-4 text-amber-800">Languages I can speak:</h4>
+              <p className="text-gray-800 py-1">German (native)</p>
+              <p className="text-gray-800 py-1">English (native level)</p>
+              <p className="text-gray-800 py-1">Korean (TOPIK 1 certified)</p>
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              I love to learn and beginn my journey to great dev for{" "}
-              <span className="text-teal-500">agencies</span> and consulted for{" "}
-              <span className="text-teal-500">startups</span> and collaborated
-              with talented people to create digital products for the web.
+            <h3 className="text-3xl py-1 dark:text-orange-700">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-neutral-400">
+              I love to combine my passion for {""}
+              <span className="text-amber-800">design and development</span>. So
+              far I have created several portfolio projects, which you can find
+              below.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              I am a full stack developer with a passion for design and a focus
-              on the user experience.
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-neutral-400">
+              I have more currently in progress, {""}
+              <span className="text-amber-500">stay tuned!</span>
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -160,6 +170,14 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              <a
+                href="https://portfolio-mbrndt.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dark:text-amber-400 text-lg font-medium py-2 "
+              >
+                portfolio version 2
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -170,6 +188,14 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              <a
+                href="https://studyboo.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dark:text-amber-400 text-lg font-medium py-2 "
+              >
+                studyboo: flashcards for students webapp
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -180,6 +206,14 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
+              <a
+                href="https://choonsik.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dark:text-amber-400 text-lg font-medium py-2 "
+              >
+                choonsik: blogging platform
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -190,26 +224,14 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
               />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web5}
-                className="rounded-lg object-cover"
-                alt=""
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web6}
-                className="rounded-lg object-cover"
-                alt=""
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+              <a
+                href="https://www.canva.com/design/DAEyHVlSk5Y/XzWWxcXr4IFtTtvgEz4xQg/view?utm_content=DAEyHVlSk5Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dark:text-amber-400 text-lg font-medium py-2 "
+              >
+                chonsa: online bulletjournal (in progress)
+              </a>
             </div>
           </div>
         </section>

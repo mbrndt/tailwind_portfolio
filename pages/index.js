@@ -4,7 +4,6 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillYoutube } from "react-icons/ai";
 import Image from "next/image";
 import avatar from "../public/avatar.jpg";
-import deved from "../public/dev-ed-wave.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
@@ -41,7 +40,9 @@ export default function Home() {
                 {" "}
                 <a
                   className="bg-orange-300 dark:bg-orange-800 text-slate-700 dark:text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  href="https://www.canva.com/design/DAE_KrWpiBM/obutKC0Et7YoiwGlUF5W-A/view?utm_content=DAE_KrWpiBM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   resume
                 </a>

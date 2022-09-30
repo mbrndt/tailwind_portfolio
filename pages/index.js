@@ -25,7 +25,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className=" bg-slate-50 px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+        {/* <main className="dark:bg-gray-900 bg-gradient-to-t from-red-200 to-orange-200 px-10 md:px-20 lg:px-40 "> */}
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">developed by mareike</h1>
@@ -39,7 +40,7 @@ export default function Home() {
               <li>
                 {" "}
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-red-300 dark:bg-sky-700 text-white px-4 py-2 rounded-md ml-8"
                   href="#"
                 >
                   resume
@@ -47,23 +48,30 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 ">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+          <div className="text-center p-10  ">
+            <h2 className="text-5xl py-2 text-zinc-800 font-medium md:text-6xl dark:text-slate-200">
               Mareike Brandt
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">dev and designer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-sky-700">
+              dev and designer
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-sky-700 md:text-xl max-w-xl mx-auto">
               junior developer based in south korea, able to work world wide.
               excited to see whats out there
             </p>
+            <div className="relative mx-auto bg-gradient-to-b from-red-200 rounded-full w-60 h-60 mt-20 overflow-hidden md:h-96 md:w-96">
+              <Image
+                src={avatar}
+                alt="avatar"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <AiFillGithub />
             <AiFillLinkedin />
             <AiFillYoutube />
-          </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={avatar} alt="avatar" layout="fill" objectFit="cover" />
           </div>
         </section>
         <section>

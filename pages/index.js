@@ -14,6 +14,7 @@ import web4 from "../public/web4.jpg";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.jpeg";
 import web7 from "../public/web7.png";
+import chonsa from "../public/chonsa.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -186,51 +187,38 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Image
-                src={web7}
-                className="rounded-lg object-cover"
-                alt=""
-                width={"90%"}
-                height={"90%"}
-                layout="responsive"
-              />
-              <a className="dark:text-amber-400 text-lg font-medium py-2 ">
-                studycafe (in progress)
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web1}
-                className="rounded-lg object-cover"
+                src={chonsa}
+                className="rounded-lg object-contain "
                 alt=""
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
               <a
-                href="https://portfolio-mbrndt.vercel.app/"
+                href="https://chonsa.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="dark:text-amber-400 text-lg font-medium py-2 "
               >
-                portfolio version 2
+                chonsa: online bulletjournal (in progress)
               </a>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
-                src={web2}
-                className="rounded-lg object-cover"
+                src={web5}
+                className="rounded-lg object-contain"
                 alt=""
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
               <a
-                href="https://studyboo.vercel.app/"
+                href="https://minimalist-lyart.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="dark:text-amber-400 text-lg font-medium py-2 "
               >
-                studyboo: flashcards for students webapp
+                a minimalist website
               </a>
             </div>
             <div className="basis-1/3 flex-1">
@@ -253,40 +241,54 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1">
               <Image
-                src={web4}
-                className="rounded-lg object-cover"
+                src={web7}
+                className="rounded-lg object-contain"
                 alt=""
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
-              <a
-                href="https://www.canva.com/design/DAEyHVlSk5Y/XzWWxcXr4IFtTtvgEz4xQg/view?utm_content=DAEyHVlSk5Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="dark:text-amber-400 text-lg font-medium py-2 "
-              >
-                chonsa: online bulletjournal (in progress)
+              <a className="dark:text-amber-400 text-lg font-medium py-2 ">
+                studycafe (in progress)
               </a>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
-                src={web5}
-                className="rounded-lg object-cover"
+                src={web1}
+                className="rounded-lg object-contain"
                 alt=""
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
               <a
-                href="https://minimalist-lyart.vercel.app/"
+                href="https://portfolio-mbrndt.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="dark:text-amber-400 text-lg font-medium py-2 "
               >
-                a minimalist website
+                portfolio version 2
               </a>
             </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={web2}
+                className="rounded-lg object-contain"
+                alt=""
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+              <a
+                href="https://studyboo.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dark:text-amber-400 text-lg font-medium py-2 "
+              >
+                studyboo: flashcards for students webapp
+              </a>
+            </div>
+
             <div className="basis-1/3 flex-1">
               <a className="text-amber-600 text-xl font-medium py-2">
                 {" "}

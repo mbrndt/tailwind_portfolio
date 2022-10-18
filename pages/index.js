@@ -73,9 +73,28 @@ export default function Home() {
             </div>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillGithub />
-            <AiFillLinkedin />
-            <AiFillYoutube />
+            {" "}
+            <a
+              href="https://github.com/mbrndt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mareike-brandt-4911b520b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCmDYNxaQ9rbzdzlFSfvECog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillYoutube />
+            </a>
           </div>
         </section>
         <section>

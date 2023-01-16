@@ -16,6 +16,7 @@ import web6 from "../public/web6.jpeg";
 import web7 from "../public/web7.png";
 import web8 from "../public/web8.png";
 import chonsa from "../public/chonsa.png";
+import tokki from "../public/tokki.png";
 
 export default function Home() {
 	const [darkMode, setDarkMode] = useState(false);
@@ -185,7 +186,35 @@ export default function Home() {
 							<span className="text-amber-500">stay tuned!</span>
 						</p>
 					</div>
+
 					<div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-neutral-100">
+							<h1 className="text-3xl font-medium pb-2">Client Work</h1>
+						</div>
+						<div className="basis-1/3 flex-1">
+							<Image
+								src={tokki}
+								className="rounded-lg object-contain "
+								alt=""
+								width={"100%"}
+								height={"100%"}
+								layout="responsive"
+							/>
+							<a
+								href="https://www.tokki-store.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="dark:text-amber-400 text-lg font-medium py-2 "
+							>
+								Tokki Store
+							</a>
+						</div>
+					</div>
+
+					<div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+						<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-neutral-100">
+							<h1 className="text-3xl font-medium pb-2">Personal Work</h1>
+						</div>
 						<div className="basis-1/3 flex-1">
 							<Image
 								src={chonsa}
